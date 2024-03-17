@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color:#2e2e2e;
+    margin: 0;
+}
+
+
+#header {
+    background-color: rgba(28, 28, 28, 0.909);
+    color: #feffff;
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    font-weight: bolder;
+}
+
+.nav {
+    display: inline-block;
+    padding: 1.7% 30px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #feffff;
+}
+
+a:hover {
+    color: #ffc400;
+    
+}
+.nav:hover{
+    border-bottom:2px solid #ffc400;
+}
+
+
+#about {
+    background-color: #3e4040;
+    color: #17252a;
+    margin: 2.5% 5% 3% 5%;
+    padding: 4%;
+    
+    
+}
+
+#content {
+    display: inline-block;
+    width: 50%;
+}
+
+#my-photo {
+    display: inline-block;
+    width: 40%;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #f8ab06;
+    font-weight: 800;
+    font-size: 2.5vw;
+    animation: text-animation 0.5s ease-in-out forwards;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-weight: 550;
+    font-size: 1.8vw;
+    color:white;
+    animation: text-animation 0.5s ease-in-out forwards;
+}
+
+h4 {
+    margin-top: 4px;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #0e0d0b;
+    font-size: 1.2vw;
+    animation: text-animation 0.5s ease-in-out forwards;
+}
+
+p {
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 1vw;
+    color:white;
+    animation: text-animation 0.5s ease-in-out forwards;
+}
+
+
+#projects {
+    background-color:#3e4040;
+    color: #17252a;
+    margin: 0 5%;
+    padding: 4%;
+}
+
+#projects h2 {
+    font-weight: 800;
+    font-size: 2vw;
+}
+
+#projects p {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+
+#skills {
+    background-color: #3e4040;;
+    color: #17252a;
+    margin: 3% 5%;
+    padding: 4%;
+}
+
+#skills h2 {
+    font-weight: 800;
+    font-size: 2vw;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#skills .card p {
+    font-size: 1vw;
+    
+}
+
+
+#contact {
+    background-color:#3e4040;
+    color: #17252a;
+    margin: 3% 5%;
+    padding: 1% 5% 4% 5%;
+    border-radius: 0 0 20px 20px;
+}
+
+#contact p {
+    font-size: 1.2vw;
+    color:white;
+}
+
+.icon {
+    width: 3vw;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+#learn-more{
+    margin: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    transition: transform 0.2s ease-in;
+    color: #feffff;
+    background-color: #313131;
+    font-size: 1vw;
+}
+.proj-btn {
+    margin: 1rem 0rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    transition: transform 0.2s ease-in;
+    font-size: 1vw;
+    background-color: #f8ab06;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    #projects p ,
+    #contact p
+    {
+        font-size: x-small;
+        font-weight: 500;
+        line-height: 160%;
+    }
+    #skills .card p {
+        font-size: 1.5vw;
+        line-height: 160%;
+        font-weight: 300;
+    }
+
+    
+    #learn-more,
+    .proj-btn {
+        margin: 0.5rem 1rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.7vw;
+        
+    }
+    .nav{
+        font-size: 2.5vw;
+    }
+    p{
+        font-size:x-small;
+        line-height: 160%;
+    }
+    h1{
+        font-size: large;
+    }
+    h2,
+    #skills h2,
+    #projects h2{
+        font-size:medium;
+    }
+    h4{
+        font-size: small;
+    }
+    .icon{
+        width:10%;
+    }
+}
+
+
+.card {
+    display: inline-block;
+    width: 17%;
+    height: 100%;
+    background-color: #4f5151;;
+    margin: 8px;
+    padding: 20px;
+    transition: all 0.2s ease-in;
+}
+
+
+.card-alignment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .card {
+        width: 22.5%;
+        padding:.15%;
+        margin:2px;
+    }
+
+    
+    .card-alignment {
+        flex-direction: column;
+        justify-content: space-around;
+        padding:4px;
+        
+    }
+
+}
+
+.card:hover {
+    background-color: #6a5c23;
+}
+@keyframes text-animation {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+

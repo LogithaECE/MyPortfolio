@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <style>
+        
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color:#2e2e2e;
+    margin: 0;
+    height:1400px;
+}
+
+.section {
+    background-color: #3e4040;
+    color: white;
+    margin: 2.5% 5% 3% 5%;
+    padding: 4%;
+   
+}
+
+.section h1 {
+    color: #f8ab06;
+    font-size: 2.5vw;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    font-size: 1vw;
+    line-height: 200%;
+    color:white;
+}
+
+.more {
+    display: inline-block;
+    margin: 1rem 2rem;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272828;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+    padding: .25rem .5rem;
+    color:white;
+    border:none;
+    font-size: 1vw;
+}
+
+.details:hover {
+    box-shadow: 0 0 5px #7a722b, 0 0 25px #7a6b2b, 0 0 50px #746e46, 0 0 100px #74464f;
+    transform: scale(1.1);
+    animation: shadow-pulse 1s infinite alternate;
+}
+
+.details img {
+    width:3vw;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        margin: 20px 10px 30px 10px;
+    }
+
+    .section h1 {
+        font-size: 4vw;
+    }
+
+    .section ul li {
+        font-size: 2vw;
+        margin:30px;
+        
+    }
+
+    .details {
+        font-size: 4vw;
+        line-height: 200%;
+        font-weight: 100;
+    }
+
+    .details img {
+        height: 7vw;
+       
+    }
+}
+
+    </style>
+    <link rel = "stylesheet" href="portfolio.css"/>
+</head>
+<body>
+<div id="education" class="section">
+    <h1>Education</h1>
+    <ul>
+        <li>Bachelors Degree in Electronics and Communication Engineering from Sri Eshwar College of Engineering</li>
+        <li>96.8% in 12th - SMBM National Public School CBSE(2022)</li>
+        <li>96.2% in 10th - SSM Academy(2020)</li>
+    </ul>
+</div>
+<div id="technical-skills" class="section">
+    <h1>Technical Skills</h1>
+    <ul>
+        <li>Languages known: C | Python | Java</li>
+        <li>Framework: JavaFX | Django(basics)</li>
+        <li>Web Technologies: HTML | CSS | Javascript</li>
+        <li>EDA Tool: Arduino IDE</li>
+        <li>Cloud Platforms: Blynk App</li>
+        <li>Tools: Canva | VSCode | GoogleColab</li>
+    </ul>
+    <div class="more">
+        <button class="details" onclick="resume()">My resume <img src="https://img.icons8.com/?size=96&id=R9cokz2UAdyo&format=png" height="30px"/></button>
+    </div>
+    <div class="more">
+        <button class="details" onclick="certificate()">Certificates<img src="https://img.icons8.com/?size=96&id=6PEs2EypZuRA&format=png" height="30px"/></button>
+    </div>
+</div>
+<script src="portfolio.js"></script>
+</body>
+</html>
