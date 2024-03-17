@@ -13,3 +13,6 @@ function resume(){
 function certificate(){
     window.location.href = "https://drive.google.com/drive/folders/1hhcQPAHMZevXrsy7ZjR6Ka00tFqqPFLP";
 }
+function cloneApp(){
+    window.location.href = "https://github.com/LogithaECE/Netflix_clone";
+}
