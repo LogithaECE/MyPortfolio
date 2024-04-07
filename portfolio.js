@@ -8,7 +8,7 @@ function train(){
     window.location.href = "https://github.com/LogithaECE/Railway-ticket-generation";
 }
 function resume(){
-    window.location.href = "https://drive.google.com/file/d/1s7ZC6FS1M4Q7dXKvijCqVziODsMJMFlF/view?usp=drive_link";
+    window.location.href = "https://drive.google.com/file/d/1tYvUy3isIyVu8KanRld0allK87pCdnos/view?usp=sharing";
 }
 function certificate(){
     window.location.href = "https://drive.google.com/drive/folders/1hhcQPAHMZevXrsy7ZjR6Ka00tFqqPFLP";
