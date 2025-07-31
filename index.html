@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logitha Luckshmi | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<header id="header">
+    <nav>
+        <div class="nav"><a href="#about">About</a></div>
+        <div class="nav"><a href="#skills">Skills</a></div>
+        <div class="nav"><a href="#projects">Projects</a></div>
+        <div class="nav"><a href="#internships">Internships</a></div>
+        <div class="nav"><a href="#contact">Contact</a></div>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <div id="content">
+            <h2>Hello, I'm</h2>
+            <h1>Logitha Luckshmi</h1>
+            <h4>Electronics & Embedded Systems Engineer</h4>
+            <p>
+                Final‑year ECE student passionate about fusing hardware with software to build real‑time embedded
+                solutions and intuitive web interfaces.
+            </p>
+            <button class="btn-primary" onclick="resume()">Download&nbsp;Resume</button>
+            <button class="btn-secondary" onclick="certificate()">View&nbsp;Certificates</button>
+        </div>
+        <div id="my-photo">
+            <img src="Photo.jpg" alt="profile photo"/>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical&nbsp;Skills</h2>
+        <div id="my-skill">
+            <!-- Skill cards -->
+            <div class="card"><img src="https://img.icons8.com/?size=100&id=40669&format=png&color=000000"/><br>C / Embedded&nbsp;C</div>
+            <div class="card"><img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000"/><br>Python</div>
+            <div class="card"><img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000"/><br>Java (DSA&nbsp;&amp;&nbsp;OOP)</div>
+            <div class="card"><img src="https://img.icons8.com/?size=100&id=123603&format=png&color=000000"/><br>React.js</div>
+            <div class="card"><img src="https://img.icons8.com/?size=100&id=74402&format=png&color=000000"/><br>MongoDB</div>
+            <div class="card"><img src="https://img.icons8.com/?size=100&id=13444&format=png&color=000000"/><br>ArduinoUNO / NodeMCU</div>
+            <div class="card"><img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"/><br>MySQL</div>
+            <div class="card"><img src="https://img.icons8.com/?size=100&id=Ef9lairIcqGT&format=png&color=000000"/><br>Proteus</div>
+            <div class="card"><img src="https://www.ti.com/diagrams/ccstudio_ccs_256.jpg" width="40%"/><br> MSP430</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured&nbsp;Projects</h2>
+        <div class="project-block">
+    <h3>Accident Detection & Emergency Alert System</h3>
+    <p>Designed an embedded safety module using ADXL345 accelerometer for crash detection and GSM/GPS modules for real-time SOS transmission via UART. Focused on real-time signal processing and low-power implementation.</p>
+    
+</div>
+
+<div class="project-block">
+    <h3>IoT‑Based Pacemaker Monitoring System</h3>
+    <p>Built a secure, real-time patient health monitoring system capturing analog ECG and SpO2 signals, transmitting data via MQTT protocol with AES encryption and ThingSpeak dashboard for live visualization.</p>
+    
+</div>
+
+<div class="project-block">
+    <h3>Botanica – Exotic Plant Marketplace</h3>
+    <p>A MERN stack web application offering a curated selection of rare and exotic plants. Features include user registration, product listing, cart and checkout, and secure admin dashboard for managing inventory. Designed with mobile-first responsiveness and MongoDB data management.</p>
+    
+</div>
+
+        
+    </section>
+
+    <section id="internships">
+        <h2>Internships</h2>
+        <div class="project-block">
+            <h3>Taras Systems – Embedded Systems Intern <span class="date">(Jun–Dec 2025)</span></h3>
+            <p>MSP430 &amp; STM32 programming, Linux scripting, industrial automation project.</p>
+        </div>
+        <div class="project-block">
+            <h3>NSIC – Web Development Intern <span class="date">(Aug 2024)</span></h3>
+            <p>Full‑stack web apps and IoT dashboards for hardware data visualization.</p>
+        </div>
+        <div class="project-block">
+            <h3>Better Tomorrow – MERN Stack Intern <span class="date">(Mar 2024)</span></h3>
+            <p>Built secure REST APIs &amp; dashboards enabling cloud‑embedded integration.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get&nbsp;in&nbsp;Touch</h2>
+        <div class="icon-bar">
+            <a href="https://github.com/LogithaECE" target="_blank"><img src="https://img.icons8.com/?size=96&id=4Z2nCrz5iPY2&format=png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/logitha-luckshmi-5a387b257/" target="_blank"><img src="https://img.icons8.com/?size=96&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn"></a>
+            <a href="mailto:logithaluckshmi@gmail.com"><img src="https://img.icons8.com/?size=96&id=MFd4aKzItnZK&format=png" alt="Email"></a>
+            <a href="https://www.instagram.com/logijeeva_22/" target="_blank"><img src="https://img.icons8.com/?size=96&id=Xy10Jcu1L2Su&format=png" alt="Instagram"></a>
+        </div>
+    </section>
+</main>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
