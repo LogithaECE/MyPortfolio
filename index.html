@@ -1,106 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Logitha Luckshmi | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
+  <meta charset="UTF-8">
+  <title>Logitha Luckshmi V J - Embedded Systems Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Logitha Luckshmi V J - Embedded Systems Engineer specializing in Edge-AI, IoT, and real-time hardware-software systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header id="header">
-    <nav>
-        <div class="nav"><a href="#about">About</a></div>
-        <div class="nav"><a href="#skills">Skills</a></div>
-        <div class="nav"><a href="#projects">Projects</a></div>
-        <div class="nav"><a href="#internships">Internships</a></div>
-        <div class="nav"><a href="#contact">Contact</a></div>
-    </nav>
-</header>
 
-<main>
-    <section id="about">
-        <div id="content">
-            <h2>Hello, I'm</h2>
-            <h1>Logitha Luckshmi</h1>
-            <h4>Electronics & Embedded Systems Engineer</h4>
-            <p>
-                Final‑year ECE student passionate about fusing hardware with software to build real‑time embedded
-                solutions and intuitive web interfaces.
-            </p>
-            <button class="btn-primary" onclick="resume()">Download&nbsp;Resume</button>
-            <button class="btn-secondary" onclick="certificate()">View&nbsp;Certificates</button>
+  <!-- Background trace layer -->
+  <div class="board-bg" aria-hidden="true">
+    <svg class="trace-svg" viewBox="0 0 1440 1600" preserveAspectRatio="none">
+      <g class="traces">
+        <path d="M0,120 H280 V300 H620 V80 H960 V420 H1440" />
+        <path d="M0,480 H180 V620 H520 V760 H880 V540 H1440" />
+        <path d="M0,900 H340 V1080 H680 V940 H1040 V1240 H1440" />
+        <path d="M0,1360 H260 V1480 H700 V1340 H1100 V1560 H1440" />
+      </g>
+      <g class="nodes">
+        <circle cx="280" cy="120" r="4"/><circle cx="280" cy="300" r="4"/><circle cx="620" cy="300" r="4"/>
+        <circle cx="620" cy="80" r="4"/><circle cx="960" cy="80" r="4"/><circle cx="960" cy="420" r="4"/>
+        <circle cx="180" cy="480" r="4"/><circle cx="180" cy="620" r="4"/><circle cx="520" cy="620" r="4"/>
+        <circle cx="520" cy="760" r="4"/><circle cx="880" cy="760" r="4"/><circle cx="880" cy="540" r="4"/>
+        <circle cx="340" cy="900" r="4"/><circle cx="340" cy="1080" r="4"/><circle cx="680" cy="1080" r="4"/>
+        <circle cx="680" cy="940" r="4"/><circle cx="1040" cy="940" r="4"/><circle cx="1040" cy="1240" r="4"/>
+        <circle cx="260" cy="1360" r="4"/><circle cx="260" cy="1480" r="4"/><circle cx="700" cy="1480" r="4"/>
+        <circle cx="700" cy="1340" r="4"/><circle cx="1100" cy="1340" r="4"/><circle cx="1100" cy="1560" r="4"/>
+      </g>
+    </svg>
+  </div>
+
+  <!-- Nav -->
+  <header id="header">
+    <div class="nav-wrap">
+      <a href="#about" class="logo">LL<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primaryNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="about" class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow"><span class="reg-bit">// init.h - power-on self test</span></p>
+        <h1>Logitha Luckshmi <span class="vj">V J</span></h1>
+        <h2 class="role-line">
+          <span class="role-word" id="roleWord">Embedded Systems Engineer</span>
+        </h2>
+        <p class="lede">
+          ECE graduate who likes taking
+          ideas from a breadboard to a working board - sensors talking to firmware,
+          firmware talking to the cloud, and a model small enough to live on a chip.
+          GATE EC 2026 qualified, AIR 4697 - proof that depth beats shortcuts.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="https://drive.google.com/file/d/1WEN4raHlyAhDotq5Y-H3Ekpriixp1G5A/view?usp=sharing" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn-secondary" href="https://drive.google.com/drive/folders/1hhcQPAHMZevXrsy7ZjR6Ka00tFqqPFLP" target="_blank" rel="noopener">View Certificates</a>
         </div>
-        <div id="my-photo">
-            <img src="Photo.jpg" alt="profile photo"/>
+        <div class="hero-meter">
+          <div class="meter-item">
+            <span class="meter-label">CGPA</span>
+            <span class="meter-value">9.01</span>
+          </div>
+          <div class="meter-item">
+            <span class="meter-label">GATE EC 2026</span>
+            <span class="meter-value">AIR 4697</span>
+          </div>
+          
         </div>
+      </div>
+      <div class="hero-scope" aria-hidden="true">
+        <svg viewBox="0 0 400 200" class="scope-svg">
+          <defs>
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.15"/>
+            </pattern>
+          </defs>
+          <rect width="400" height="200" fill="url(#grid)" />
+          <path class="scope-wave" d="M0,100 C20,100 30,40 50,40 C70,40 80,160 100,160 C120,160 130,60 150,60 C170,60 180,140 200,140 C220,140 230,80 250,80 C270,80 280,120 300,120 C320,120 330,100 350,100 C365,100 375,100 400,100" />
+          <line class="scope-cursor" x1="0" y1="100" x2="400" y2="100" />
+        </svg>
+        <div class="scope-readout">
+          <span>SIG_IN</span>
+          <span class="readout-value">ACTIVE</span>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
-        <h2>Technical&nbsp;Skills</h2>
-        <div id="my-skill">
-            <!-- Skill cards -->
-            <div class="card"><img src="https://img.icons8.com/?size=100&id=40669&format=png&color=000000"/><br>C / Embedded&nbsp;C</div>
-            <div class="card"><img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000"/><br>Python</div>
-            <div class="card"><img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000"/><br>Java (DSA&nbsp;&amp;&nbsp;OOP)</div>
-            <div class="card"><img src="https://img.icons8.com/?size=100&id=123603&format=png&color=000000"/><br>React.js</div>
-            <div class="card"><img src="https://img.icons8.com/?size=100&id=74402&format=png&color=000000"/><br>MongoDB</div>
-            <div class="card"><img src="https://img.icons8.com/?size=100&id=13444&format=png&color=000000"/><br>ArduinoUNO / NodeMCU</div>
-            <div class="card"><img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"/><br>MySQL</div>
-            <div class="card"><img src="https://img.icons8.com/?size=100&id=Ef9lairIcqGT&format=png&color=000000"/><br>Proteus</div>
-            <div class="card"><img src="https://www.ti.com/diagrams/ccstudio_ccs_256.jpg" width="40%"/><br> MSP430</div>
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <div class="section-head">
+        <p class="eyebrow">// stack.h - components on board</p>
+        <h2>Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h3>Languages</h3>
+          <div class="pin-row">
+            <span class="pin">C / Embedded C</span>
+            <span class="pin">C++</span>
+            <span class="pin">Python</span>
+            <span class="pin">Verilog (HDL)</span>
+            <span class="pin">JavaScript</span>
+            <span class="pin">Java</span>
+            <span class="pin">MySQL</span>
+            <span class="pin">MongoDB</span>
+          </div>
         </div>
+
+        <div class="skill-block">
+          <h3>Microcontrollers</h3>
+          <div class="pin-row">
+            <span class="pin">ESP32</span>
+            <span class="pin">ESP8266</span>
+            <span class="pin">Arduino Uno</span>
+            <span class="pin">Intel 8051</span>
+            <span class="pin">MSP430</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3>Tools &amp; IDEs</h3>
+          <div class="pin-row">
+            <span class="pin">Keil uVision</span>
+            <span class="pin">Arduino IDE</span>
+            <span class="pin">Proteus</span>
+            <span class="pin">Xilinx</span>
+            <span class="pin">Cadence Virtuoso</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3>IoT &amp; Cloud</h3>
+          <div class="pin-row">
+            <span class="pin">MQTT (HiveMQ)</span>
+            <span class="pin">ThingSpeak</span>
+            <span class="pin">Blynk</span>
+            <span class="pin">AES Encryption</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3>AI / ML - Edge</h3>
+          <div class="pin-row">
+            <span class="pin">TensorFlow Lite</span>
+            <span class="pin">Keras Tuner</span>
+            <span class="pin">Edge Inference</span>
+            <span class="pin">FFT Feature Extraction</span>
+          </div>
+        </div>
+
+        <div class="skill-block">
+          <h3>Operating Systems</h3>
+          <div class="pin-row">
+            <span class="pin">Linux (Ubuntu)</span>
+            <span class="pin">Windows</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>Featured&nbsp;Projects</h2>
-        <div class="project-block">
-    <h3>Accident Detection & Emergency Alert System</h3>
-    <p>Designed an embedded safety module using ADXL345 accelerometer for crash detection and GSM/GPS modules for real-time SOS transmission via UART. Focused on real-time signal processing and low-power implementation.</p>
-    
-</div>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <div class="section-head">
+        <p class="eyebrow">// modules - things I've actually built</p>
+        <h2>Featured Projects</h2>
+      </div>
 
-<div class="project-block">
-    <h3>IoT‑Based Pacemaker Monitoring System</h3>
-    <p>Built a secure, real-time patient health monitoring system capturing analog ECG and SpO2 signals, transmitting data via MQTT protocol with AES encryption and ThingSpeak dashboard for live visualization.</p>
-    
-</div>
+      <div class="project-list">
 
-<div class="project-block">
-    <h3>Botanica – Exotic Plant Marketplace</h3>
-    <p>A MERN stack web application offering a curated selection of rare and exotic plants. Features include user registration, product listing, cart and checkout, and secure admin dashboard for managing inventory. Designed with mobile-first responsiveness and MongoDB data management.</p>
-    
-</div>
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="module-tag">MODULE 01 · EDGE-AI</span>
+            <h3>EEG-Based Drowsiness Detection Helmet for Aviation Crew</h3>
+            <p class="project-sub">Edge-AI brainwave monitoring &amp; on-device cognitive state classification</p>
+          </div>
+          <p class="project-desc">
+            Designed a smart aviation helmet that classifies cognitive state in real time from EEG signals,
+            using a preprocessing pipeline and a Keras-optimized neural network. The trained model was
+            converted to TensorFlow Lite and deployed directly on an ESP32 for on-device inference -
+            triggering a buzzer and sending cloud alerts the moment fatigue is detected. The firmware was
+            engineered for stable ADC sampling, low-power operation, and reliability in the field.
+          </p>
+          <div class="pin-row tech-row">
+            <span class="pin pin-data">Deep Learning</span>
+            <span class="pin pin-data">ESP32</span>
+            <span class="pin pin-data">Signal Processing</span>
+            <span class="pin pin-data">TensorFlow Lite</span>
+          </div>
+        </article>
 
-        
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="module-tag">MODULE 02 · IOT SAFETY</span>
+            <h3>Biometric-Based Smart Motorcycle Safety System for Women</h3>
+            <p class="project-sub">ESP32-CAM · GSM/GPS · fingerprint authentication · Telegram alerts</p>
+          </div>
+          <p class="project-desc">
+            Built a safety system that authenticates the rider via fingerprint sensor before triggering any
+            emergency response - combining GPS tracking and GSM-based SMS alerts to registered contacts.
+            Live camera feeds stream to a Telegram bot with local SD-card backup, while an OTP-secured
+            deactivation flow keeps the whole system usable without depending on a smartphone.
+          </p>
+          <div class="pin-row tech-row">
+            <span class="pin pin-data">ESP32-CAM</span>
+            <span class="pin pin-data">GSM/GPS</span>
+            <span class="pin pin-data">UART</span>
+            <span class="pin pin-data">I2C</span>
+            <span class="pin pin-data">WiFi</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-head">
+            <span class="module-tag">MODULE 03 · BIOMEDICAL IOT</span>
+            <h3>IoT-Based Pacemaker Monitoring System</h3>
+            <p class="project-sub">Analog signal acquisition · MQTT · AES encryption · ThingSpeak dashboard</p>
+          </div>
+          <p class="project-desc">
+            Captured analog ECG and SpO2 signals via biomedical sensors and digitized them in real time
+            through a microcontroller. Patient data is transmitted over MQTT with AES encryption to keep
+            medical telemetry secure, feeding a scalable pipeline that powers both a ThingSpeak dashboard
+            and a custom HTML/JS visualization layer.
+          </p>
+          <div class="pin-row tech-row">
+            <span class="pin pin-data">MQTT</span>
+            <span class="pin pin-data">AES Encryption</span>
+            <span class="pin pin-data">IoT</span>
+            <span class="pin pin-data">Signal Acquisition</span>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section id="internships">
-        <h2>Internships</h2>
-        <div class="project-block">
-            <h3>Taras Systems – Embedded Systems Intern <span class="date">(Jun–Dec 2025)</span></h3>
-            <p>MSP430 &amp; STM32 programming, Linux scripting, industrial automation project.</p>
+    <!-- PUBLICATIONS / ACHIEVEMENTS -->
+    <section id="publications" class="publications">
+      <div class="section-head">
+        <p class="eyebrow">// achievements.json - logged milestones</p>
+        <h2>Publications &amp; Achievements</h2>
+      </div>
+
+      <div class="pub-grid">
+        <div class="pub-card pub-card-featured">
+          <span class="pub-tag">IEEE Xplore</span>
+          <h3>Integrated Safety Helmet with TinyML for Real-Time Anomaly Detection in Aviation Crew</h3>
+          <p>Presented at ICEAMST 2025 · Indexed in IEEE Xplore</p>
         </div>
-        <div class="project-block">
-            <h3>NSIC – Web Development Intern <span class="date">(Aug 2024)</span></h3>
-            <p>Full‑stack web apps and IoT dashboards for hardware data visualization.</p>
+        <div class="pub-card">
+          <span class="pub-tag">Conference</span>
+          <h3>Enhancing IoT Healthcare Security through NZTA</h3>
+          <p>Presented at ICSHIT 2024</p>
         </div>
-        <div class="project-block">
-            <h3>Better Tomorrow – MERN Stack Intern <span class="date">(Mar 2024)</span></h3>
-            <p>Built secure REST APIs &amp; dashboards enabling cloud‑embedded integration.</p>
+        <div class="pub-card">
+          <span class="pub-tag">Award</span>
+          <h3>First Prize - Paper Presentation</h3>
+          <p>JCT College of Engineering and Technology</p>
         </div>
+        <div class="pub-card">
+          <span class="pub-tag">Certification</span>
+          <h3>Advanced C Programming</h3>
+          <p>Microchip University · 2024</p>
+        </div>
+        <div class="pub-card">
+          <span class="pub-tag">Certification</span>
+          <h3>Mastering Data Structures using C and C++</h3>
+          <p>Udemy · 2023</p>
+        </div>
+        <div class="pub-card">
+          <span class="pub-tag">Certification</span>
+          <h3>The Joy of Computing using Python</h3>
+          <p>NPTEL · 2023</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Get&nbsp;in&nbsp;Touch</h2>
-        <div class="icon-bar">
-            <a href="https://github.com/LogithaECE" target="_blank"><img src="https://img.icons8.com/?size=96&id=4Z2nCrz5iPY2&format=png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/logitha-luckshmi-5a387b257/" target="_blank"><img src="https://img.icons8.com/?size=96&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn"></a>
-            <a href="mailto:logithaluckshmi@gmail.com"><img src="https://img.icons8.com/?size=96&id=MFd4aKzItnZK&format=png" alt="Email"></a>
-            <a href="https://www.instagram.com/logijeeva_22/" target="_blank"><img src="https://img.icons8.com/?size=96&id=Xy10Jcu1L2Su&format=png" alt="Instagram"></a>
-        </div>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="section-head">
+        <p class="eyebrow">// connect.sh - open a channel</p>
+        <h2>Get in Touch</h2>
+      </div>
+      <p class="contact-lede">
+        Always glad to talk embedded systems, edge AI, or anything with a blinking LED.
+        Reach out - I usually respond within a day.
+      </p>
+      <div class="contact-grid">
+        <a class="contact-link" href="mailto:logithaluckshmi@gmail.com">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 7 9-7"/></svg>
+          </span>
+          <span class="contact-text">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">logithaluckshmi@gmail.com</span>
+          </span>
+        </a>
+        <a class="contact-link" href="tel:+916381197449">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5h4l2 5-2.5 2a11 11 0 0 0 5.5 5.5l2-2.5 5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 1.5 6.5a2 2 0 0 1 2-2z"/></svg>
+          </span>
+          <span class="contact-text">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 63811 97449</span>
+          </span>
+        </a>
+        <a class="contact-link" href="https://github.com/LogithaECE" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.53.1.72-.23.72-.51v-1.98c-2.93.64-3.55-1.25-3.55-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.61 2.47 1.15 3.07.87.1-.68.36-1.15.66-1.41-2.34-.27-4.8-1.17-4.8-5.2 0-1.15.41-2.09 1.08-2.82-.11-.27-.47-1.34.1-2.8 0 0 .88-.28 2.88 1.07a10 10 0 0 1 5.24 0c2-1.35 2.88-1.07 2.88-1.07.57 1.46.21 2.53.1 2.8.67.73 1.08 1.67 1.08 2.82 0 4.04-2.47 4.92-4.82 5.18.38.33.71.97.71 1.96v2.9c0 .28.19.62.73.51A10.5 10.5 0 0 0 12 1.5z"/></svg>
+          </span>
+          <span class="contact-text">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">LogithaECE</span>
+          </span>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/logitha-luckshmi-5a387b257/" target="_blank" rel="noopener">
+          <span class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </span>
+          <span class="contact-text">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">logitha-luckshmi</span>
+          </span>
+        </a>
+      </div>
     </section>
-</main>
 
-<script src="portfolio.js"></script>
+  </main>
+
+ 
+  <script src="script.js"></script>
 </body>
 </html>
